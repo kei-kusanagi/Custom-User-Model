@@ -2,11 +2,11 @@ En  esta occasion, revisaremos la función de Django para administrar usuarios y
 
 empezamos como siempre, creando nuestro entorno virtual, instalando Django y creando un nuevo proyecto y app
 
-![image](README%20IMG/Pasted%20image%2020220725130537.png)
+![image](IMG%20README/Pasted%20image%2020220725130537.png)
 
 
 iniciamos declarando nuestra app dentro de settings.py 
-![image](README%20IMG/Pasted%20image%2020220725132926.png)
+![image](IMG%20README/Pasted%20image%2020220725132926.png)
 
 y justo abajo declaramos el modelo que usaremos para nuestra base de datos, esto apuntara al modelo de base de datos llamado User que crearemos ahorita mismo
 
@@ -169,20 +169,20 @@ Y por ultimo este return que con el split partirá el correo electrónico lo que
         return self.name or self.email.split('@')[0]
 ```
 
-![image](README%20IMG/Pasted%20image%2020220725163625.png)
+![image](IMG%20README/Pasted%20image%2020220725163625.png)
 
 ahora toca hacer las migraciones para dejar listo todo para actualizar nuestra base de datos
-![image](README%20IMG/Pasted%20image%2020220725145122.png)
+![image](IMG%20README/Pasted%20image%2020220725145122.png)
 
 ahora podemos crear un super usuario también
-![image](README%20IMG/Pasted%20image%2020220725154150.png)
+![image](IMG%20README/Pasted%20image%2020220725154150.png)
 
 esto esta usando la función que creamos mas arriba nos preguntara directamente el email en ves de unnombre de usuario como lo hace la forma tradicional de Django
-![image](README%20IMG/Pasted%20image%2020220725154223.png)
+![image](IMG%20README/Pasted%20image%2020220725154223.png)
 
 podemos correr el servidor e ir al sitio /admin y logearnos con este nuevo usuario que creamos
 
-![image](README%20IMG/Pasted%20image%2020220725154410.png)
+![image](IMG%20README/Pasted%20image%2020220725154410.png)
 
 Pero como podemos observar no aparece nuestra lista de usuarios ya que no están formando parte del Django asi que ahora tenemos que ir a admin.py y lo registramos allí
 ```
@@ -195,25 +195,25 @@ admin.site.register(User)
 ```
 
 actualizamos y ahora si aparece aqui
-![image](README%20IMG/Pasted%20image%2020220725164455.png)
+![image](IMG%20README/Pasted%20image%2020220725164455.png)
 
 si entramos y vemos el usuario que hemos creado
-![image](README%20IMG/Pasted%20image%2020220725164521.png)
+![image](IMG%20README/Pasted%20image%2020220725164521.png)
 
 podemos ver una version codificada de nuestra contraseña, los permisos que tenemos conectados y similares
-![image](README%20IMG/Pasted%20image%2020220725164614.png)
+![image](IMG%20README/Pasted%20image%2020220725164614.png)
 
 Una ultima cosa mas, en la parte de arriba nos aparece el nombre "split"eado que configuramos, pero si queremos podemos guardar un numbre en el campo Name
 
-![image](README%20IMG/Pasted%20image%2020220725164744.png)
-![image](README%20IMG/Pasted%20image%2020220725164918.png)
+![image](IMG%20README/Pasted%20image%2020220725164744.png)
+![image](IMG%20README/Pasted%20image%2020220725164918.png)
 
 le damos en SAVE
-![image](README%20IMG/Pasted%20image%2020220725164934.png)
+![image](IMG%20README/Pasted%20image%2020220725164934.png)
 
 Nice, ahora con esto ya sabemos crear modelos personalizados, esto normalmente  se hace antes de comenzar  a hacer cualquier otra cosa cuando crea proyectos con Django para no estropear esto con otras funciones.
 
 Proyecto sacado del video
 
-![image](README%20IMG/Pasted%20image%2020220725165710.png)
+![image](IMG%20README/Pasted%20image%2020220725165710.png)
 [Custom User Model | Explore Django](https://youtu.be/mndLkCEiflg)
