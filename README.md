@@ -216,4 +216,4 @@ Nice, ahora con esto ya sabemos crear modelos personalizados, esto normalmente  
 Proyecto sacado del video
 
 ![image](IMG%20README/Pasted%20image%2020220725165710.png)
-[Custom User Model | Explore Django](https://youtu.be/mndLkCEiflg)
+[Custom User Model | Explore Django](https://youtu.be/mndLkCEiflg)https://youtu.be/mndLkCEiflg
